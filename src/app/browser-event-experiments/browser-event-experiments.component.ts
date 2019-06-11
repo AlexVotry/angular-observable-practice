@@ -14,6 +14,7 @@ export class BrowserEventExperimentsComponent implements OnInit {
   ngOnInit() {
     this.hoverSection = document.getElementById('hover');
     this.hoverSection.addEventListener('mousemove', onMouseMove);
+    this.hoverSection.addEventListener('click', onClick);
   }
   unsubscribe = () => {
     console.log('Called unsubscribe()');
@@ -21,4 +22,5 @@ export class BrowserEventExperimentsComponent implements OnInit {
   }
 }
 
-const onMouseMove = (ev: MouseEvent) => console.log('event:', ev);
+const onClick = (ev: Event) => console.log('click:', ev);
+const onMouseMove = (ev: MouseEvent) => console.log('mousemove:', ev);
