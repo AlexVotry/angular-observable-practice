@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { globalEventBus, LESSONS_LIST_AVAILABLE, ADD_NEW_LESSON } from './event-bus';
+import { globalEventBus, LESSONS_LIST_AVAILABLE, ADD_NEW_LESSON } from './app-data';
 import { testLessons } from '../shared/model/test-lessons';
 import { Lesson } from '../shared/model/lesson';
 
