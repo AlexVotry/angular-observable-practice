@@ -1,27 +1,25 @@
-# Observable
+# Repository Content
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
+This was a tutorial from Angular University [RxJs and Reactive Patterns Angular Architecture Course](https://angular-university.io/course/reactive-angular-architecture-course).
 
-## Development server
+This course repository is updated to Angular v7, there is a Yarn lock file available.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Experiments with observable and Rxjs. 
 
-## Code scaffolding
+I worked with observables directly between components and services. 
+I created observables to make api calls to a separate server on localhost.  
+In the course component I used two services as providers exclusively for the course component to allow two instances of the course to appear independently of each other.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+I added a course-detail resolver to allow for data to appear more seamlessly
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+# Starting the development server
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+To start the server, run the following command:
 
-## Running end-to-end tests
+    npm start
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+To start 8090 server:
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+    npm run rest-api
