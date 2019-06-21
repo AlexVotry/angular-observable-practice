@@ -14,17 +14,13 @@ export class HomeComponent implements OnInit {
   courses$: Observable<Course[]>;
   latestLessons$: Observable<Lesson[]>;
 
-  constructor(private coursesService: CoursesService) {
-
-  }
+  constructor(private coursesService: CoursesService) { }
 
   ngOnInit() {
 
     this.courses$ = this.coursesService.findAllCourses();
 
     this.latestLessons$ = this.coursesService.findLatestLessons();
-
-
 
   }
 

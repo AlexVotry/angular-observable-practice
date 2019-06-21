@@ -10,17 +10,10 @@ export class TopMenuComponent implements OnInit {
 
   isLoggedIn$: Observable<boolean>;
 
-
-  constructor(private userService: UserService) {
-
-
-  }
-
+  constructor(private userService: UserService) { }
 
   ngOnInit() {
-
     this.isLoggedIn$ = this.userService.user$.map(user => user !== UNKNOWN_USER);
-
   }
 
 }
