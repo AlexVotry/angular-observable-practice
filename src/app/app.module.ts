@@ -4,9 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { BrowserEventExperimentsComponent } from './browser-event-experiments/browser-event-experiments.component';
-import { EventBusComponent } from './event-bus/event-bus.component';
 import { LessonsListComponent } from './lessons-list/lessons-list.component';
-import { LessonsCounterComponent } from './lessons-counter/lessons-counter.component';
 import { HomeComponent } from './home/home.component';
 import { firebaseConfig } from "../environments/firebase.config";
 import { AngularFireModule } from '@angular/fire';
@@ -15,7 +13,6 @@ import { routerConfig } from "./router.config";
 import { CourseDetailComponent } from './course-detail/course-detail.component';
 import { CoursesService } from "./services/courses.service";
 import { CoursesListComponent } from './courses-list/courses-list.component';
-import { CourseDetailHeaderComponent } from './course-detail-header/course-detail-header.component';
 import { NewsletterComponent } from './newsletter/newsletter.component';
 import { NewsletterService } from "./services/newsletter.service";
 import { TopMenuComponent } from './top-menu/top-menu.component';
@@ -39,13 +36,10 @@ import { AngularFireAuthModule } from "@angular/fire/auth";
   declarations: [
     AppComponent,
     BrowserEventExperimentsComponent,
-    EventBusComponent,
     LessonsListComponent,
-    LessonsCounterComponent,
     HomeComponent,
     CourseDetailComponent,
     CoursesListComponent,
-    CourseDetailHeaderComponent,
     NewsletterComponent,
     TopMenuComponent,
     LoginComponent,
